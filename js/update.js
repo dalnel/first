@@ -10,4 +10,4 @@ $('#send').click(function()
     $.get(appUrl.val(), parameter);
 })
   
-$.get(appUrl.val(), parameter);
+
