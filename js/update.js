@@ -11,7 +11,7 @@ $('#send').click(function()
         type: 'POST',
         url: appUrl ,
         data: parameter ,
-        success: alert("success"); ,
+        success: alert("success") ,
 });
 });
   
