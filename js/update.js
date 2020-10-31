@@ -9,7 +9,7 @@ $('#send').click(function()
         message: $('#message').val()
     };
     $.ajax({
-        type: 'POST',
+        type: 'GET',
         url: `${cors}${appUrl}` ,
         data: parameter ,
         success: alert("success") ,
