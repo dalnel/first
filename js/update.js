@@ -7,7 +7,12 @@ $('#send').click(function()
         email: $('#email').val(),
         message: $('#message').val()
     };
-    $.get(appUrl, parameter);
+    $.ajax({
+        type: 'POST',
+        url: appUrl ,
+        data: parameter ,
+        success: alert("success"); ,
+});
 });
   
 
