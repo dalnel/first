@@ -8,6 +8,6 @@ $('#send').click(function()
         message: $('#message').val(),
     }
     $.get(appUrl.val(), parameter);
-})
+});
   
 
