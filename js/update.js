@@ -3,15 +3,19 @@ var appUrl = "https://script.google.com/macros/s/AKfycbxuMe5lhl08sPMU5P_SziBsdPD
 var parameter = {};
 $('#send').click(function()
 {
-    parameter={
+    /*parameter={
         name: $('#name').val(),
         email: $('#email').val(),
         message: $('#message').val()
-    };
+    };*/
     $.ajax({
         type: 'GET',
         url: `${cors}${appUrl}` ,
-        data: parameter ,
+        data: {
+            "name": $('#name').val(),
+            "email": $('#email').val(),
+            "message": $('#message').val()
+        } ,
         success: alert("success") ,
 });
 });
