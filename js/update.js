@@ -5,7 +5,7 @@ $('#send').click(function()
     parameter={
         name: $('#name').val(),
         email: $('#email').val(),
-        message: $('#message').val(),
+        message: $('#message').val()
     };
     $.get(appUrl.val(), parameter);
 });
